@@ -38,6 +38,10 @@ a
     display: inline-block;
 
 }
+li
+{
+    list-style: none;
+}
 .sidebar
 {
     background-color: var(--body-bg);
@@ -78,4 +82,74 @@ a
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+}
+.sidebar--close
+{
+    display: none;
+}
+.sidebar--user
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.sidebar--infor
+{
+    display: flex;
+    align-items: center;
+}
+.sidebar--user__name
+{
+    margin-left: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+.profile--image
+{
+    width: var(--profile-image-size);
+     height: var(--profile-image-size);
+     border-radius: 10px;
+    
+}
+.btn
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    color: var(--main-color);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+.btn i {
+    font-size: 1.25rem;
+}
+
+.btn-ouline {
+    border: 2px solid var(--main-color);
+    transition: background-color 0.2s ease-in-out;
+}
+.btn-ouline:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.sidebar--menu {
+    padding: 10px 0;
+    list-style-type: none;
+}
+
+.sidebar--menu > li > a {
+    width: 100%;
+    padding: 15px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: color 0.2s ease-in-out;
 }
